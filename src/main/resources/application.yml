@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: task-management-system
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydb
+    username: postgres
+    password: postgres_secret
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+jwt:
+  secret: secret
+  expiration: 36000000 # Expiration time in milliseconds (10 hours)
